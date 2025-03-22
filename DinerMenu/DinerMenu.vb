@@ -16,7 +16,7 @@
     Sub WriteSoupSpecial()
         FileOpen(1, "SoupSpecial.txt", OpenMode.Output)
         Write(1, "~Soup Of The Day~" & vbNewLine _
-              & "Traditional Japanese Ramen with two soft boiled eggs")
+              & "Ramen: A Japanese noodle dish that includes Chinese-style wheat noodles served in a broth and two slices of soft boiled egg.")
         FileClose(1)
     End Sub
 
@@ -42,7 +42,7 @@
     Sub WriteSaladSpecial()
         FileOpen(2, "SaladSpecial.txt", OpenMode.Output)
         Write(2, "~Salad Of The Day~" & vbNewLine _
-              & "Potato Salad")
+              & "Cesar Salad: A green salad of romaine lettuce and croutons dressed with lemon juice (or lime juice), olive oil, eggs, Worcestershire sauce, anchovies, garlic, Dijon mustard, Parmesan and black pepper.")
         FileClose(2)
     End Sub
 
@@ -67,7 +67,7 @@
     Sub WriteFishSpecial()
         FileOpen(3, "FishSpecial.txt", OpenMode.Output)
         Write(3, "~Fish Of The Day~" & vbNewLine _
-              & "Sole meunière")
+              & "Sole meunière: a classic French fish dish consisting of sole, floured and fried, and served with hot melted butter, lemon juice and parsley.")
         FileClose(3)
     End Sub
 
