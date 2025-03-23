@@ -47,6 +47,7 @@ Partial Class DinerMenu
         Me.DisplaySpecialLabel.Name = "DisplaySpecialLabel"
         Me.DisplaySpecialLabel.Size = New System.Drawing.Size(776, 229)
         Me.DisplaySpecialLabel.TabIndex = 1
+        Me.DisplaySpecialLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'SoupButton
         '

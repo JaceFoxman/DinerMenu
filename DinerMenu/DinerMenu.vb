@@ -27,7 +27,7 @@ Public Class DinerMenu
     ''' </summary>
     Sub WriteSoupSpecial()
         FileOpen(1, "SoupSpecial.txt", OpenMode.Output)
-        Write(1, "                                    ~Soup Of The Day~" & vbNewLine _
+        Write(1, "~Soup Of The Day~" & vbNewLine _
               & "Ramen: A Japanese noodle dish that includes Chinese-style wheat noodles served in a broth and two slices of soft boiled egg.")
         FileClose(1)
     End Sub
@@ -64,7 +64,7 @@ Public Class DinerMenu
     ''' </summary>
     Sub WriteChefSpecial()
         FileOpen(2, "Chef's Special.txt", OpenMode.Output)
-        Write(2, "                                      ~Chef's Special~" & vbNewLine _
+        Write(2, "~Chef's Special~" & vbNewLine _
               & "Cesar Salad: A green salad of romaine lettuce and croutons dressed with lemon juice (or lime juice), olive oil, eggs, Worcestershire sauce, anchovies, garlic, Dijon mustard, Parmesan and black pepper.")
         FileClose(2)
     End Sub
@@ -101,7 +101,7 @@ Public Class DinerMenu
     ''' </summary>
     Sub WriteDailyFish()
         FileOpen(3, "Daily Fish.txt", OpenMode.Output)
-        Write(3, "                                          ~Daily Fish~" & vbNewLine _
+        Write(3, "~Daily Fish~" & vbNewLine _
               & "Sole meunière: a classic French fish dish consisting of sole, floured and fried, and served with hot melted butter, lemon juice and parsley.")
         FileClose(3)
     End Sub
