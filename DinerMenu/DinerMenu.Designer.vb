@@ -34,7 +34,7 @@ Partial Class DinerMenu
         '
         Me.DinerNameLabel.AutoSize = True
         Me.DinerNameLabel.Font = New System.Drawing.Font("Script MT Bold", 28.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DinerNameLabel.Location = New System.Drawing.Point(207, 20)
+        Me.DinerNameLabel.Location = New System.Drawing.Point(208, 9)
         Me.DinerNameLabel.Name = "DinerNameLabel"
         Me.DinerNameLabel.Size = New System.Drawing.Size(360, 67)
         Me.DinerNameLabel.TabIndex = 0
@@ -43,9 +43,9 @@ Partial Class DinerMenu
         'DisplaySpecialLabel
         '
         Me.DisplaySpecialLabel.Font = New System.Drawing.Font("Constantia", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DisplaySpecialLabel.Location = New System.Drawing.Point(12, 87)
+        Me.DisplaySpecialLabel.Location = New System.Drawing.Point(12, 90)
         Me.DisplaySpecialLabel.Name = "DisplaySpecialLabel"
-        Me.DisplaySpecialLabel.Size = New System.Drawing.Size(776, 232)
+        Me.DisplaySpecialLabel.Size = New System.Drawing.Size(776, 229)
         Me.DisplaySpecialLabel.TabIndex = 1
         '
         'SoupButton

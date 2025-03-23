@@ -15,7 +15,7 @@
 
     Sub WriteSoupSpecial()
         FileOpen(1, "SoupSpecial.txt", OpenMode.Output)
-        Write(1, "~Soup Of The Day~" & vbNewLine _
+        Write(1, "                                    ~Soup Of The Day~" & vbNewLine _
               & "Ramen: A Japanese noodle dish that includes Chinese-style wheat noodles served in a broth and two slices of soft boiled egg.")
         FileClose(1)
     End Sub
@@ -35,24 +35,24 @@
     End Sub
 
     Private Sub Saladbutton_Click(sender As Object, e As EventArgs) Handles Saladbutton.Click
-        WriteSaladSpecial()
-        ReadSaladSpecial()
+        WriteChefSpecial()
+        ReadChefSpecial()
     End Sub
 
-    Sub WriteSaladSpecial()
-        FileOpen(2, "SaladSpecial.txt", OpenMode.Output)
-        Write(2, "~Salad Of The Day~" & vbNewLine _
+    Sub WriteChefSpecial()
+        FileOpen(2, "Chef's Special.txt", OpenMode.Output)
+        Write(2, "                                      ~Chef's Special~" & vbNewLine _
               & "Cesar Salad: A green salad of romaine lettuce and croutons dressed with lemon juice (or lime juice), olive oil, eggs, Worcestershire sauce, anchovies, garlic, Dijon mustard, Parmesan and black pepper.")
         FileClose(2)
     End Sub
 
-    Sub ReadSaladSpecial()
-        Dim saladOfTheDay As String
-        FileOpen(2, "SaladSpecial.txt", OpenMode.Input)
+    Sub ReadChefSpecial()
+        Dim chefSpecial As String
+        FileOpen(2, "Chef's Special.txt", OpenMode.Input)
         Try
             Do Until EOF(2)
-                Input(2, saladOfTheDay)
-                DisplaySpecialLabel.Text = saladOfTheDay
+                Input(2, chefSpecial)
+                DisplaySpecialLabel.Text = chefSpecial
             Loop
             FileClose(2)
         Catch ex As Exception
@@ -60,24 +60,24 @@
         End Try
     End Sub
     Private Sub FishButton_Click(sender As Object, e As EventArgs) Handles FishButton.Click
-        WriteFishSpecial()
-        ReadFishSpecial()
+        WriteDailyFish()
+        ReadDailyFish()
     End Sub
 
-    Sub WriteFishSpecial()
-        FileOpen(3, "FishSpecial.txt", OpenMode.Output)
-        Write(3, "~Fish Of The Day~" & vbNewLine _
+    Sub WriteDailyFish()
+        FileOpen(3, "Daily Fish.txt", OpenMode.Output)
+        Write(3, "                                          ~Daily Fish~" & vbNewLine _
               & "Sole meunière: a classic French fish dish consisting of sole, floured and fried, and served with hot melted butter, lemon juice and parsley.")
         FileClose(3)
     End Sub
 
-    Sub ReadFishSpecial()
-        Dim fishOfTheDay As String
-        FileOpen(3, "FishSpecial.txt", OpenMode.Input)
+    Sub ReadDailyFish()
+        Dim dailyFish As String
+        FileOpen(3, "Daily Fish.txt", OpenMode.Input)
         Try
             Do Until EOF(3)
-                Input(3, fishOfTheDay)
-                DisplaySpecialLabel.Text = fishOfTheDay
+                Input(3, dailyFish)
+                DisplaySpecialLabel.Text = dailyFish
             Loop
             FileClose(3)
         Catch ex As Exception
