@@ -8,11 +8,19 @@
 
     End Sub
 
+    ''' <summary>
+    ''' When pressed run WriteSoupSpecial and ReadSoupSpecial
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
     Private Sub SoupButton_Click(sender As Object, e As EventArgs) Handles SoupButton.Click
         WriteSoupSpecial()
         ReadSoupSpecial()
     End Sub
 
+    ''' <summary>
+    ''' Create or open file "SoupSpecial" and add text
+    ''' </summary>
     Sub WriteSoupSpecial()
         FileOpen(1, "SoupSpecial.txt", OpenMode.Output)
         Write(1, "                                    ~Soup Of The Day~" & vbNewLine _
@@ -20,6 +28,9 @@
         FileClose(1)
     End Sub
 
+    ''' <summary>
+    ''' Opens file "SoupSpecial" and writes to label
+    ''' </summary>
     Sub ReadSoupSpecial()
         Dim soupOfTheDay As String
         FileOpen(1, "SoupSpecial.txt", OpenMode.Input)
@@ -34,11 +45,19 @@
         End Try
     End Sub
 
+    ''' <summary>
+    ''' When pressed run WriteChefSpecial and ReadChefSpecial
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
     Private Sub Saladbutton_Click(sender As Object, e As EventArgs) Handles Saladbutton.Click
         WriteChefSpecial()
         ReadChefSpecial()
     End Sub
 
+    ''' <summary>
+    ''' Create or open file "Chef's Special" and add text
+    ''' </summary>
     Sub WriteChefSpecial()
         FileOpen(2, "Chef's Special.txt", OpenMode.Output)
         Write(2, "                                      ~Chef's Special~" & vbNewLine _
@@ -46,6 +65,9 @@
         FileClose(2)
     End Sub
 
+    ''' <summary>
+    ''' Opens file "Chef's Special" and writes to label
+    ''' </summary>
     Sub ReadChefSpecial()
         Dim chefSpecial As String
         FileOpen(2, "Chef's Special.txt", OpenMode.Input)
@@ -59,11 +81,20 @@
             MsgBox("File Not Found")
         End Try
     End Sub
+
+    ''' <summary>
+    ''' When pressed run WriteDailyFish and ReadDailyFish
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
     Private Sub FishButton_Click(sender As Object, e As EventArgs) Handles FishButton.Click
         WriteDailyFish()
         ReadDailyFish()
     End Sub
 
+    ''' <summary>
+    ''' Create or open file "Daily Fish" and add text
+    ''' </summary>
     Sub WriteDailyFish()
         FileOpen(3, "Daily Fish.txt", OpenMode.Output)
         Write(3, "                                          ~Daily Fish~" & vbNewLine _
@@ -71,6 +102,9 @@
         FileClose(3)
     End Sub
 
+    ''' <summary>
+    ''' Opens file "Daily Fish" and writes to label
+    ''' </summary>
     Sub ReadDailyFish()
         Dim dailyFish As String
         FileOpen(3, "Daily Fish.txt", OpenMode.Input)
